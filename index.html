@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__menu">
+            <a class="header__menu__link" href="index.html">Codificador</a>
+            <a class="header__menu__link" href="decrypt.html">Decodificador</a>
+        </nav>
+    </header>
+    <main class="presentation">
+        <section class="presentation__content">
+            <h1 class="presentation__content__title">Codificador de Texto.</h1>
+            <textarea class="text-area" id="inputText"  placeholder="Insira o texto para codificar aqui..."></textarea>
+            <div class="button">
+                <button onclick="encodeText()" class="button-click">Criptografar</button>
+            </div>
+            <textarea class="text-area" id="outputText" placeholder="Texto processado aparecerá aqui..." readonly></textarea>
+            <div class="button">
+                <button onclick="copyText()" class="button-click">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desenvolvido por CastanhaDEV.</p>
+    </footer>
+<script src="script.js"></script>   
+</body>
+</html>
